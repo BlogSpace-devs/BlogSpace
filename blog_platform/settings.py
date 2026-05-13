@@ -58,4 +58,8 @@ DATABASES = {
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+<<<<<<< HEAD
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+=======
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+>>>>>>> 96da046cef57c28128ca24b9ed37ed84e331ec47
