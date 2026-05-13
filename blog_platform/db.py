@@ -14,6 +14,17 @@ def get_connection():
     return conn
 '''
 
+'''
+def get_connection():
+    return psycopg2.connect(
+        dbname="blogging_2",
+        user="postgres",
+        password="vignasri",
+        host="localhost"
+    )
+'''
+
+
 def get_connection():
     # In production, Render will provide a DATABASE_URL. 
     # Locally, it will fall back to your local credentials.
@@ -29,6 +40,8 @@ def get_connection():
             password="your_password",
             host="localhost"
         )
+    
+
 
 # ── The Context Manager Class ──
 class DBConnection:
