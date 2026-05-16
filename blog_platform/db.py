@@ -1,19 +1,7 @@
 import os
 import psycopg2
 
-#xLY4X84kwfq9hLjK
-'''
-def get_connection():
-    conn = psycopg2.connect(
-        host="db.ugrukquepbotedvxklfh.supabase.co",
-        database="postgres",
-        user="postgres",
-        password="xLY4X84kwfq9hLjK",
-        port="5432"
-    )
-    return conn
-'''
-
+# use this when deploying the code locally with appropriate credentials
 '''
 def get_connection():
     return psycopg2.connect(
@@ -24,7 +12,7 @@ def get_connection():
     )
 '''
 
-
+# use this when deploying code in Render
 def get_connection():
     # In production, Render will provide a DATABASE_URL. 
     # Locally, it will fall back to your local credentials.
