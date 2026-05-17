@@ -50,19 +50,25 @@ Follow these exact steps to run the application on your local machine.
 
 ### 1. Clone the Repository
 Open your terminal and run:
+```bash
 git clone https://github.com/the-three-musketeers/BlogSpace.git
 cd BlogSpace
+```
 
 ### 2. Configure the Virtual Environment
 Keep your dependencies isolated from your main system:
+```bash
 python -m venv venv
+```
 
 Activate it:
-* Windows: venv\Scripts\activate
-* Mac/Linux: source venv/bin/activate
+* Windows: `venv\Scripts\activate`
+* Mac/Linux: `source venv/bin/activate`
 
 ### 3. Install Required Packages
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Database Setup
 1. Open pgAdmin and create a new local database (e.g., `blogging_2`).
@@ -73,11 +79,15 @@ pip install -r requirements.txt
 
 ### 5. Launch the Application
 Apply Django's internal setup migrations :
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
 Start the Django development server:
+```bash
 python manage.py runserver
+```
 
 Open your browser and navigate to `http://<localhost>:8000` to view the platform.
 
